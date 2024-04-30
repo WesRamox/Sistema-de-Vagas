@@ -29,7 +29,7 @@ function novaVaga() {
 }
 
 function exibirVaga() {
-    const indice = promp("Informe o indice da vaga que deseja exibir:")
+    const indice = prompt("Informe o indice da vaga que deseja exibir:")
     const vaga = vagas[indice]
 
     const candidatosEmTexto = vaga.candidatos.reduce(function (textoFinal, candidato) {
@@ -62,7 +62,7 @@ function inscreverCandidato() {
 }
 
 function excluirVaga() {
-    const indice = promp("Informe o idice da vaga que deseja excluir: ")
+    const indice = prompt("Informe o idice da vaga que deseja excluir: ")
     const vaga = vagas[indice]
 
     const confirmacao = confirm(
